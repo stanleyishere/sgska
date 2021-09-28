@@ -1,12 +1,13 @@
-## Welcome to GitHub Pages
+## Stanley Ka Gong Sheng 
 
-You can use the [editor on GitHub](https://github.com/stanleyishere/sgska.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+BE Mechanical Engineering @ UMS (2017-2021)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+stanleysheng97#gmail.com
 
-### Markdown
+Interest: Mechanism Design, Robotics
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Projects
+
 
 ```markdown
 Syntax highlighted code block
@@ -23,7 +24,7 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+[LinkedIn](https://www.linkedin.com/in/stanley-ka-gong-sheng-b975a9139/) and ![Image](src)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
