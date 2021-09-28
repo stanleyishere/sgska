@@ -1,13 +1,19 @@
 ## Stanley Ka Gong Sheng 
 
-BE Mechanical Engineering @ UMS (2017-2021)
-
-stanleysheng97#gmail.com
+BE Mechanical Engineering @ Universiti Malaysia Sabah (2017-2021)
 
 Interest: Mechanism Design, Robotics
 
-### Projects
+[LinkedIn](https://www.linkedin.com/in/stanley-ka-gong-sheng-b975a9139/) | [Email](stanleysheng97@gmail.com)
 
+### Academic Projects
+- Wearable Sensor Casing
+- Quadruped Robot Design
+- Plastic Extrusion System
+- Competitive Robots
+
+### Others
+- Cooking
 
 ```markdown
 Syntax highlighted code block
@@ -24,7 +30,6 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[LinkedIn](https://www.linkedin.com/in/stanley-ka-gong-sheng-b975a9139/) and ![Image](src)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
