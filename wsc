@@ -2,4 +2,5 @@
 
 This is a project collaborated with MSC Lab UMS and Jarvis Software Technology Ltd in Malaysia.
 
-The sensor is a MyoWare muscle sensor soldered with ESP32.
+The sensor is a MyoWare muscle sensor soldered with ESP32 development board to track EMG signal from muscle movement.
+
