@@ -1,19 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-190458172-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-190458172-1');
-</script>
-    
     <meta charset="utf-8" />
 
-    <title>Blue- A Low-Cost 7 DOF Arm and Gripper |Menglong Guo</title>
+    <title>Wearable Sensor Casing|Stanley Ka Gong Sheng</title>
     <meta name="description" content="Blue is a low-cost, human-size, and compliant 7 degree of freedom arm with a 2kg payload. It was developed in the Robot Learning Lab under Professor Pieter A..." />
     <link rel="alternate" type="application/rss+xml" title="Menglong Guo" href="/website/feed.xml" />
     <meta name="theme-color" content="#ffffff" />
