@@ -1,28 +1,169 @@
 <!DOCTYPE html>
-<h<!DOCTYPE html>
-<html>
-    <head>
-        <title>S.G.S.Ka</title>
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" />
-    </head>
-<body>tml lang="en-US">
->
-    <section class="hero is-fullheight is-bright">
-        <div class="hero-body">
-            <div class="container">
-            <div class="columns is-vcentered is-centered">
-                <div class="column is-6">
-                    <div class="block">
-                        <h1 class="title is-2">Wearable Sensor Casing</h1>
-                    </div>
-                    <hr />
-                    <div class="block">
-                    </div>
-            </div>
-        </div>
-    </section>
-</body>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-190458172-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-190458172-1');
+</script>
+    
+    <meta charset="utf-8" />
+
+    <title>Blue- A Low-Cost 7 DOF Arm and Gripper |Menglong Guo</title>
+    <meta name="description" content="Blue is a low-cost, human-size, and compliant 7 degree of freedom arm with a 2kg payload. It was developed in the Robot Learning Lab under Professor Pieter A..." />
+    <link rel="alternate" type="application/rss+xml" title="Menglong Guo" href="/website/feed.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/website/assets/stylesheets/site.css" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet" /><script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/106/three.min.js" integrity="sha256-tAVw6WRAXc3td2Esrjd28l54s3P2y7CDFu1271mu5LE=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://brentyi.github.io/stl_web_viewer2/build/stlwebviewer2.css" /></head>
+  <body>
+    <main class="wide">
+  <a id="return_home" href="https://menglongguo.github.io///website">&larr;</a>
+
+<h1>Blue- A Low-Cost 7 DOF Arm and Gripper <time datetime="Spring 17 - Spring 19">Spring 17 - Spring 19</time></h1>
+<p><em>Blue</em> is a low-cost, human-size, and compliant 7 degree of freedom arm with a 2kg payload.
+It was developed in the <a href="http://rll.berkeley.edu/">Robot Learning Lab</a> under <a href="https://people.eecs.berkeley.edu/~pabbeel/">Professor Pieter Abbeel</a> as a low-cost platform to democratize robotic research.
+I worked on this project from my 3rd to final year of my bachelor at Berkeley.
+What began in 2017 as a concept, is now a platform available for researchers (more information is available <a href="https://www.berkeleyopenarms.org/">here</a>).</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RCQNIgySaYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p>The work was published in the IEEE’s International Conference on Robotics and Automation (<a href="https://www.icra2019.org/">ICRA 2019</a>), the Arxiv link is <a href="https://arxiv.org/abs/1904.03815">here</a> and a copy is shown below:</p>
+
+<iframe src="https://drive.google.com/file/d/1BF0iX-mr0g-xxwFFcOnAoNCMtre2P8h1/preview"></iframe>
+
+<!--
+A model of the arm:
+<div class="stlwv2-model" data-model-url="/website/assets/models/longboard_remote.stl"></div>
+ find and make stl -->
+
+<hr />
+<h3 id="hand-design">Hand Design</h3>
+
+<p>I was in charge of the end effector on the team.
+Seeing that there wasn’t a gripper that fulfills all of <em>blue’s</em> requirements for this type of research application, I set out to design and manufacture one.</p>
+
+<p>The design constraints included:</p>
+
+<ul>
+  <li>
+    <p>Low-cost- 
+A cheaper hand lowers the barrier of entry for research. The final Bill of Material cost was $330.</p>
+  </li>
+  <li>
+    <p>Durable: 
+Research sees a lot of collisions between end effector and environment. The HALT testing shows it could withstand 50,000 low speed impact collisions and 4,000 high speed collisions (video below).</p>
+  </li>
+  <li>
+    <p>Repeatable:
+The gripper should be consistent through its life cycle. The <em>Blue</em> gripper was functional after 40,000 cycles of repeated grasping with no loss of performance.</p>
+  </li>
+  <li>
+    <p>Lightweight:
+The lighter the gripper the greater the payload can be. The final weight is 660 grams.</p>
+  </li>
+  <li>
+    <p>High Grip Force:
+To be able to handle objects around 2kg, a high grip force is required. <em>Blue’s</em> nominal grip force is 100N with a peak at 150N.</p>
+  </li>
+  <li>
+    <p>Force control:
+Accurate feedforward force control is needed for handling of delicate objects.</p>
+  </li>
+  <li>
+    <p>Human-Safe:
+Safehandling encourage operation around humans. The gripper was designed with curved surfaces and no pinchpoints for ease of handling.</p>
+  </li>
+</ul>
+
+<p>A model of the gripper with inner mechanism shown:</p>
+<div class="stlwv2-model" data-model-url="/website/assets/models/BlueHandCompressed.STL"></div>
+<!-- find and make stl -->
+
+<p>In hopes of growing the field of research in robotic grippers, we open-sourced the designs <a href="https://berkeleyopengrippers.github.io/">here</a>.
+The research work was published in the 2019 IEEE’s Conference on Automation Science and Engineering and a copy is shown below:</p>
+<iframe src="https://drive.google.com/file/d/1LC0DirgkaY__70R6G0JBzAUYHXj9ZpEU/preview"></iframe>
+
+<p>Footage of durability testing of the robot shown below:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3JgtpOue68Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<hr />
+<h3 id="alternatives-designs-using-a-strain-gauge">Alternatives Designs using a Strain Gauge</h3>
+
+<p>In the process of designing the <em>Blue</em> Gripper, other designs were made along the way.
+These designs played with the tradeoffs between force-control vs durability and force-control vs weight using different actuation modalities.</p>
+
+<p>The “strain gauge design” uses a strain gauge attached to a non-backdrivable dc motor.
+Although much lighter (a small motor), it was not backdrivabile (making it less safe) and not as durable (forces at finger tips directly transfer to motor).</p>
+
+<p>The cross section of design is shown below with a interactable 3D Cad model.
+<img src="/website/assets/images/04Hand1.jpg" alt="Hand1" /></p>
+<div class="stlwv2-model" data-model-url="/website/assets/models/StrainHand.STL"></div>
+<!-- find and make stl -->
+
+<hr />
+<h3 id="alternatives-designs-using-a-ball-screw">Alternatives Designs using a Ball screw</h3>
+
+<p>The “Ball screw design” uses a ball screw instead of the lead screw with a similar form factor as <em>Blue</em>.
+A ball screw gives more backdrivability with a more transparent transmission compare to a lead screw.
+However, the total weight was around 1100 grams compare to 660 grams of <em>Blue</em>, lowering the final payload of the arm.</p>
+
+<p>The cross section is shown below with a interactable 3D Cad model.
+<img src="/website/assets/images/04Hand2.jpg" alt="Hand2" /></p>
+<div class="stlwv2-model" data-model-url="/website/assets/models/BallScrewHandGood.STL"></div>
+<!-- find and make stl -->
+
+<hr />
+<h3 id="3d-printer-management">3D Printer management</h3>
+
+<p>In addition to design, I was also in charge of the 8 Markforge printers and 3 Monoprice Select Minis in the lab.
+After extensive rounds of protoyping, we decided to manufacture 8 whole arms in 2.5 weeks which meant printing 550 parts (90 days of continuous printing).
+This required a lot of organization and logistics to save time and money (each roll of the Markforge Nylon filament was $180). 
+I also was the one removing prints, swapping filament, and cleaning beds, so I wanted to minimize my work as well.</p>
+
+<p>Below are snippets of the large multi-page excel document used to organize this. 
+This below is the high level planning to split parts onto printers for each of the A and B cycle (each cycle took 23 hrs to give me an hour each day to remove parts and start the next cycle).
+<img src="/website/assets/images/04PrinterOrg1.png" alt="Printerorg1" /></p>
+
+<p>This below is the day to day logs in the beginning to make sure the prints were coming out correctly (we had some underextrusion problems due to wet filament) and the filament usage rate was as predicted.
+<img src="/website/assets/images/04PrinterOrg2.png" alt="Printerorg2" /></p>
+
+<hr />
+
+<h3 id="links">Links</h3>
+
+<ul>
+  <li><a href="http://rll.berkeley.edu/">Robot Learning Lab’s website</a></li>
+  <li><a href="https://people.eecs.berkeley.edu/~pabbeel/">Professor Pieter Abbeel’s website</a></li>
+  <li><a href="https://www.berkeleyopenarms.org/">Berkeley Open Arms</a></li>
+  <li><a href="https://arxiv.org/abs/1904.03815">Paper Arxiv link</a></li>
+  <li><a href="https://berkeleyopengrippers.github.io/">Berkeley Open Grippers</a></li>
+</ul>
+
+
+</main>
+<script src="https://brentyi.github.io/stl_web_viewer2/build/stlwebviewer2.js" type="text/javascript"></script><!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      // tracker methods like "setCustomDimension" should be called before "trackPageView"
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//brentyi.com/piwik/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '5']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Piwik Code -->
+  </body>
 </html>
