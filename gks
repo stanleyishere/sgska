@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8" />
+    <head>
+        <title>Quadruped Robot Design|S.G.S.Ka</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" />
+    </head>
+<body>
+    <section class="hero is-fullheight is-bright">
+        <div class="hero-body">
+            <div class="container">
+            <div class="columns is-vcentered is-centered">
+                <div class="column is-6">
+                    <div class="block">
+                         <main class="wide">
+  <a id="return_home" href="https://stanleyishere.github.io/sgska">&larr;</a>
+                        <h1 class="title is-2">CAD/CAM Lab, Chosun University
+                            <br><h1 style="color: #0000FF;"><b><time datetime="July 2019 - August 2019">July 2019 - August 2019</time></b></h1>
+                    
+ <p>I was fortunate enough to receive an award of Global Korea Scholarship (GKS) which I was able to conduct short research program at Chosun University, South Korea.
+ I was assigned to <a href="https://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=25488219&siteId=smart"> CAD/CAM/CAE Lab</a> where I had a wonderful time to work with
+ undergraduates from other countries. I also met my <a href="https://stanleyishere.github.io/sgska/projects/quadruped"supervisor</a> as he was doing his PhD threre.
+ 
+<h2 style="color: #FF7A59;"><b>With Prof S.S. Kim</b></h2>    
+<img src="/sgska/assets/IMG-6051.JPG" alt="Photo" /></p>
+
+<body>
+<html>
