@@ -26,6 +26,7 @@
                 Since I just finished my undergraduate and am applying for postgraduate studies, this research work serves as a fundamental practice for me.<p><br><br>
 
             </p><div>
+            <hr />
 
             </div><p>
                 The research grant is a FRGS grant by Ministry of Higher Education of Malaysia where the proposed title is 
@@ -33,27 +34,70 @@
                 The main goal of this research project is to increase the deposition rate of FDM process and determine the optimal deposition rate of filament while maintaning a desirable quality of surface finishing.
                 Through this project, the control of deposition rate can be then adjusted to cater the different needs and requirements of the FDM application along with adaptive slicing.
             </p><br>
+            <hr />
 
             <div><p>
                 The deposition rate is the unit cube of filament deposited over time, which can be defined as the product of extrusion multiplier,
                 line width, layer height, and feed rate of the machine. Feed rate here refers to the multiplier of movement speed of all machine axes (X,Y,Z,F).
                 Therefore, for the first part of research, we vary the extrusion multiplier and feed rate of the machine to produce different specimens (Using 0.5mm nozzle and layer height 0.2mm).<br>
-                To visualise the difference affected by the said parameters, the specimen printed is a single-layer rectangular block of 60mm length and 20mm width as shown in figure below.
+                To visualise the difference affected by the said parameters, the specimen printed is a single-layer rectangular block of 60mm length and 20mm width as shown in figure below.<br><br>
                 <div class="columns is-vcentered is-centered">
                     <img src="/sgska/assets/printing.png" alt="Schematic Diagram" /></p>  
                 </div>
 
             </p>
             </div>
+            <br>
                 The specimens are shown below.
                 <div class="columns is-vcentered is-centered">
                     <img src="/sgska/assets/Picof0.5-9spec.png" alt="Schematic Diagram" /></p>  
                 </div>
             <p></p>
+            <hr />
             Visually, the specimens printed with original extrusion volume has the smoothest and silkiest surface quality as expected.
-            However, the surface finishing of specimens 
-            <div>
-            
+            However, the surface finishing of specimens with extrusion multiplier of 2 and 3 (E<value>multiplied) has poorer surface finishing
+                due to the bumps or "lines" formed for every line. This is due to the over-extrusion of filament along the printing process where the newly deposited
+                filament flows to adjacent flow path, and the over-extruded filament partially blocks the travelling nozzle in the next line.
+                This subsequently creates the filamet-overlapping phenomenon.
+            <div><br>
 
-
+            <div><p>
+                Then, a surface texture measurement instrument was used to determine the surface roughness of specimens where the results conforms with the visual inspection.
+                Besides, the speicmens were cut into halves where the specimens are prepared using metallography method (cold mounting, grinding) for microscopy examination.
+                <b>*There was no polishing process as the specimens were plastics.</b> Figure below shows some of the microscope images.
+            </p><br>
             </div>
+            <div class="columns is-vcentered is-centered">
+                <img src="/sgska/assets/.5 3ef30.png" alt="Schematic Diagram" /></p>  
+            </div>
+            <hr />
+            <div class="columns is-vcentered is-centered">
+                <img src="/sgska/assets/1.0 2ef30.png" alt="Schematic Diagram" /></p>
+            </div>
+            <hr />
+
+            <div>
+                <p>
+                    The images were then analyzed using ImageJ to calculate the cross-sectional area of a single-line filament. The experimental deposition rate
+                    can then be obtained and compared with theoretical depositon rate. From the results, the settings of <i>"1.0-3E-F30"</i> yields highest deposition rate while maintaning
+                    an acceptable surface finishing.
+                </p><br>
+                <p>
+                    From that settings, different specimens were printed but with different layer height to determine the optimal layer height that can produce a good print.
+                    This helps us to determine the algorithm of FDM parameters that allow to print a good part with least time possible.
+                </p>
+            </div>
+            <hr />
+            <div>
+                <p>
+                    <b>
+                        *The research work is now written and expected to publish in spring term 2022. Once published, the link will be attached here.
+                    </b>
+                </p>
+            </div>
+           
+            </div>
+            <html>
+</section>
+</body>
+</html>
